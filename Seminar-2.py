@@ -23,12 +23,48 @@
 # 2. Найти произведение пар чисел в списке. Парой считаем первый и последний элемент, второй и предпоследний и т.д. 
 #    Пример: [2, 3, 4, 5, 6] => [12, 15, 16]; [2, 3, 5, 6] => [12, 15] 
 
+# from random import randint
+# import math
+
+# def get_num(n, first, last):
+#     return [randint(first, last) for i in range(n)]
+
+# def mult_pairs(mylist):
+#     return [mylist[i] * mylist[-i - 1] for i in range(math.ceil(len(mylist)/2))]
+
+# kol = 6
+# frst = 1
+# last = 10
+
+# list = get_num(kol, frst, last)
+# print(' ')
+# print(f'Перваначальный список чисел: {list}')
+# print(f'Произведение пар чисел: {mult_pairs(list)}')
+
 #------
 #------
 
 # 3. В заданном списке вещественных чисел найдите разницу между максимальным и минимальным значением 
 #    дробной части    элементов. 
 #    Пример: [1.1, 1.2, 3.1, 5, 10.01] => 0.19
+
+# from random import uniform
+
+# def get_real_nums (kol, frst, last):
+#     return [round(uniform(frst,last), 2) for i in range(kol)]
+
+# def find_diff(mynums):
+#     num = [round(x - int(x), 2) for x in (mynums)]
+#     return max(num) - min(num)
+
+# kol = 5
+# first = 1
+# last = 10
+# mynums = get_real_nums(kol, first, last)
+
+# print(' ')
+# print (f'Вывод чисел: {mynums}')
+# print(f'Разница между макс. и мин. значением дробной части: {find_diff(mynums)}')
 
 #------
 #------
