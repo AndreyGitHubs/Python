@@ -1,21 +1,24 @@
 # 1. Найти сумму чисел списка стоящих на нечетной позиции
 #    Пример:[1,2,3,4] -> 4
 
-#list = [int(input('Введите элемент списка: ')) for i in range(int(input('Введите длину списка: ')))]
+# list = [int(input('Введите элемент списка: ')) for i in range(int(input('Введите длину списка: ')))]
 # list = [1,2,3,4,5,6,7,8,9]
 # composition = 1
 # for i in list:
 #     composition *= i
 
-# total = 0
-# for i in list:
-#     if i % 2 != 0:
-#         total += i
+from random import randint
+list = [randint(-10, 10) for i in range(10)]
 
-# print(f'Весь список: {list}')
-# print(f'Сумма элементов списка равна: {sum(list)}')
-# print(f'Произведение элементов списка: {composition}')
-# print(f'Сумма чисел на нечетных позициях: {total}')
+total = 0
+for i in list:
+    if i % 2 != 0:
+        total += i
+
+print(f'Весь список: {list}')
+print(f'Сумма элементов списка равна: {sum(list)}')
+#print(f'Произведение элементов списка: {lst * i for i in list}')
+print(f'Сумма чисел на нечетных позициях: {total}')
 
 #------
 #------
