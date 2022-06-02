@@ -46,17 +46,17 @@
 # for -  обычно делитель не будет больше корня
 # number //= i убираю множитель
 
-import math
+# import math
 
-number=int(input('Введите цисло: '))
+# number=int(input('Введите цисло: '))
 
-for i in range(2, int(math.sqrt(number)) + 1): 
-    while (number % i == 0): 
-        print(i)
-        number //= i 
+# for i in range(2, int(math.sqrt(number)) + 1): 
+#     while (number % i == 0): 
+#         print(i)
+#         number //= i 
 
-if (number != 1): 
-    print (number)
+# if (number != 1): 
+#     print (number)
 
 
 #------
